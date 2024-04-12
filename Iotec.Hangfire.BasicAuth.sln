@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iotec.Hangfire.BasicAuth", "Iotec.Hangfire.BasicAuth\Iotec.Hangfire.BasicAuth.csproj", "{D322E4C2-C122-4C93-9E00-E0D4D06E5081}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iotec.Hangfire.BasicAuth.Tests", "Iotec.Hangfire.BasicAuth.Tests\Iotec.Hangfire.BasicAuth.Tests.csproj", "{2D4BD682-A537-4102-B053-4E03F9822CD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{D322E4C2-C122-4C93-9E00-E0D4D06E5081}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D322E4C2-C122-4C93-9E00-E0D4D06E5081}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D322E4C2-C122-4C93-9E00-E0D4D06E5081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4BD682-A537-4102-B053-4E03F9822CD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4BD682-A537-4102-B053-4E03F9822CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4BD682-A537-4102-B053-4E03F9822CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4BD682-A537-4102-B053-4E03F9822CD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
