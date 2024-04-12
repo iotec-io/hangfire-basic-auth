@@ -9,17 +9,21 @@ namespace Iotec.Hangfire.BasicAuth;
 
 public class HangfireBasicAuthorizationFilter : IDashboardAuthorizationFilter
 {
-    private readonly ILogger _logger;
+
+    #region Properties
     public required string User { get; set; }
     public required string Pass { get; set; }
+    public int BlockAfterFailedAttempts { get; set; } = 3;
+    public int BlockTimeInMinutes { get; set; } = 60 * 12; // 12 hours block
 
+    #endregion
+    
     private const string AuthenticationScheme = "Basic";
-    private const int BlockAfterFailedAttempts = 5;
-    private const int BlockTimeInMinutes = 15;
+    
+    private readonly ILogger _logger;
 
     private readonly Dictionary<string, (int Count, DateTime LastAttempt)> _failedAttempts = new();
-
-
+    
     public HangfireBasicAuthorizationFilter() : this(
         new NullLogger<HangfireBasicAuthorizationFilter>())
     {

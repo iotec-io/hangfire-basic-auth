@@ -13,6 +13,8 @@
         <PackageReleaseNotes>Initial Commit</PackageReleaseNotes>
         <FileVersion>1.0.0.0</FileVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
 
     <ItemGroup>
@@ -25,6 +27,7 @@
 
     <ItemGroup>
         <PackageReference Update="Microsoft.NETCore.App" Version="2.1.8" />
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
 </Project>
